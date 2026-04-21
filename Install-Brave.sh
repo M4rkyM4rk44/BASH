@@ -15,8 +15,9 @@ do
 	echo "1) Install Brave"
 	echo "2) UnInstall Brave"
 	echo ""
+	
 	read -p "Option: " n
-  case $n in
+  	case $n in
 		0)
 			clear
 			exit
