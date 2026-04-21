@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# Make sure curl is installed
+# Install curl if not installed
+sudo apt update && sudo apt upgrade -y
+sudo apt install curl -y
+sleep 1
 
 # Script
 clear
