@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script was created to assist with a fresh Xubuntu 24.04 install.
+# This script was created to assist with a fresh Ubuntu 24.04 install.
 
 # Applications to install.
 APPLICATIONS=(
@@ -36,17 +36,13 @@ com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
 com.google.Chrome
 com.sleepfiles.OSCAR
-com.spotify.Client
 com.tradingview.tradingview
 io.ente.auth
 io.github.bytezz.IPLookup
 io.github.giantpinkrobots.flatsweep
 io.gitlab.theevilskeleton.Upscaler
-me.proton.Pass
-net.blix.BlueMail
 org.gabmus.whatip
 org.localsend.localsend_app
-org.nickvision.tubeconverter
 )
 
 # Update & Install Nala
@@ -62,12 +58,3 @@ sleep 1
 sudo apt install flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y ${FLATPAKS[@]}
-sleep 1
-
-# Install Password Manager
-wget https://proton.me/download/pass/linux/proton-pass_1.33.0_amd64.deb
-sudo dpkg -i proton-pass_1.33.0_amd64.deb
-rm proton-pass_1.33.0_amd64.deb
-
-# Cleanup
-#sudo reboot
