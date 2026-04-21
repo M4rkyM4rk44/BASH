@@ -44,7 +44,7 @@ do
 			break
 			;;
 		*) 
-      # Other / Invalid Option
+      # Invalid Option
 			clear
 			echo ""
 			echo "Invalid Option!!"
