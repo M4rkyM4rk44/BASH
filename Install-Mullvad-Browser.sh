@@ -36,9 +36,6 @@ do
 		2) 
       # UnInstall Mullvad Browser
 			clear
-			sudo rm /etc/apt/sources.list.d/mullvad.list
-			sudo apt clean
-			sudo apt update
 			sudo apt purge mullvad-browser -y
 			echo ""
 			echo "-----Mullvad Browser UnInstalled-----"
