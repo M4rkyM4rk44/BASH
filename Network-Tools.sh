@@ -12,6 +12,7 @@ NORMAL="\033[0;39m"
 
 while true
 do
+	# Menu
     clear
 	echo "Select an option:"
 	echo ""
