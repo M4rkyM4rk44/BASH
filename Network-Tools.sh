@@ -148,7 +148,7 @@ do
             echo ""
             p=$(curl -s https://icanhazip.com)
             echo "Public IP is: " $p
-            #curl https://ipinfo.io/ip
+            #curl https://ipinfo.io/ip # Option 2
 			echo ""
 			read -p "Press any key to continue ..."
             break
@@ -157,11 +157,11 @@ do
             clear
             echo "=====Get Public IP Location====="
             echo ""
-            #sudo apt install geoip-bin -y
-            #clear
+            #sudo apt install geoip-bin -y # Option 2
+            #clear # Option 2
             read -p "Please enter a Public IP address: " i
             clear
-            #geolookup $i
+            #geolookup $i # Option 2
             curl ipinfo.io/$i
 			echo ""
 			read -p "Press any key to continue ..."
