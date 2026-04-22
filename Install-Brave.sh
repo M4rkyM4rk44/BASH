@@ -23,7 +23,7 @@ do
 			exit
 			;;
 		1) 
-			# Install Brave
+		# Install Brave
       		clear
 			sudo apt install curl -y
      		curl -fsS https://dl.brave.com/install.sh | sh
