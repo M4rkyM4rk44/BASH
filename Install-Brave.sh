@@ -24,7 +24,7 @@ do
 			;;
 		1) 
 			# Install Brave
-      clear
+      		clear
 			sudo apt install curl -y
      		curl -fsS https://dl.brave.com/install.sh | sh
 			echo ""
