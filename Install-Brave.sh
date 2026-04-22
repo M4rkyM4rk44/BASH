@@ -26,10 +26,7 @@ do
 			# Install Brave
       clear
 			sudo apt install curl -y
-      sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-      echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=$( dpkg --print-architecture )] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-      sudo apt update
-      sudo apt install brave-browser
+     		curl -fsS https://dl.brave.com/install.sh | sh
 			echo ""
 			echo "-----Brave Installed-----"
 			echo ""
